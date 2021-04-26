@@ -1,0 +1,168 @@
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:138
+msgid "Your website is using SSL."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:140
+msgid "Your website is not using SSL."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:146
+msgid ""
+"Your domain seems to be approved. You can re-approve it if needed using the "
+"button below."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:148
+msgid "Click here"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:148
+#, php-format
+msgid ""
+"Plugin can attempt to do this automatically for you. Please click the button "
+"below. If this fails, you would need to do it manually. %s to read "
+"instructions."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:153
+msgid "Additional Payment Methods Settings"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:156
+msgid "Enable Additional Payment Methods"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:162
+msgid "Enables Apple Pay, Pay with Google and Payment Request API methods."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:163
+msgid ""
+"Corresponding method is automatically detected. For example, if a user is "
+"viewing your site via Android-based device, additional button to pay using "
+"Pay with Google will be displayed."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:165
+msgid "Requirements:"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:166
+msgid "Valid SSL certificate."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:167
+msgid "Before using it, you must approve you domain with Apple first."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:173
+msgid "Stripe Account Country"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:179
+#, php-format
+msgid ""
+"Select country of your Stripe account. Those are all countries currently "
+"supported by Stripe. For more details, please refer to this page: %s"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:179
+msgid "Stripe: In your country"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:185
+msgid "Button Type"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:191
+msgid "Select button type."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:197
+msgid "Auto Change to \"Donate\""
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:203
+msgid ""
+"Automatically change to \"Donate\" button type if product or button has "
+"variable price."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:209
+msgid "Button Style"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:215
+msgid "Select button style."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:221
+msgid "Button Height"
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:228
+msgid "Enter button height in pixels."
+msgstr ""
+
+#: stripe-additional-payment-methods/admin/asp-apm-admin-menu.php:265
+#: stripe-additional-payment-methods/asp-apm-main.php:37
+msgid "Additional Payment Methods"
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:53
+msgid "You website is not using SSL."
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:59
+msgid "You need to set Live Stripe Secret Key in order to approve your domain."
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:70
+#: stripe-additional-payment-methods/asp-apm-main.php:100
+#: stripe-additional-payment-methods/asp-apm-main.php:106
+#, php-format
+msgid "Failed to retreive domain verification file at %s"
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:70
+#: stripe-additional-payment-methods/asp-apm-main.php:100
+#, php-format
+msgid "Following error occurred: %s."
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:85
+#, php-format
+msgid "Can't create directory %s"
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:92
+#, php-format
+msgid "Can't write file %s"
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:106
+#, php-format
+msgid "Got following HTTP Responce Code: %s"
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:118
+msgid ""
+"Your Apple domain association file mismatches the one required by Stripe."
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:158
+#, php-format
+msgid ""
+"Your domain %s has been successfully approved. You can accept Apple Pay "
+"payments now."
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:424
+msgid "Pay from your device"
+msgstr ""
+
+#: stripe-additional-payment-methods/asp-apm-main.php:561
+#: stripe-additional-payment-methods/asp-apm-main.php:575
+#: stripe-additional-payment-methods/asp-apm-main.php:578
+msgid "Error occurred:"
+msgstr ""

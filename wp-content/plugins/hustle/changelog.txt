@@ -1,0 +1,123 @@
+Plugin Name: Hustle
+Author: Danae Millan (Incsub), Daniel Shepard (Incsub), Paul Kevin (Incsub), Leighton Sapir (Incsub)
+
+Change Log:
+----------------------------------------------------------------------
+
+= 4.3.3 ( 2020-10-08 ) =
+
+- Fix: Aweber token fails to refresh automatically
+- Fix: Wrong links being displayed for single plans
+- Enhance: "Install Pro" message compatibility with new plans
+- Enhance: Error handling for iContact API requests
+- Enhance: Form fields data escaping on creation
+- Enhance: Send a test request automatically when connecting to Zapier
+
+= 4.3.2 ( 2020-10-05 ) =
+
+- New: Global option for defining the mobile breakpoint
+- New: Allow accessing some of the module's actions found in the listing in wizards
+- Enhance: Move the "Preview" button to the top of the wizard
+- Enhance: Validate schedule dates so the start date isn't greater than the end date
+- Enhance: Include Google's reCAPTCHA in the privacy text
+- Fix: Wrong default tag in the automated email for grabbing the post URL
+- Fix: Notice for empty data in the analytics WP widget shows up when there's data
+- Fix: Several minor UI and UX issues
+- Fix: "Disable page scroll" gets enabled when closing the first of two modules using it
+- Fix: Display tracking data for sub-types when tracking is disabled
+- Fix: Dashboard's button to view the module's tracking data not behaving as expected
+- Fix: Conflict with WP Recipe Maker plugin
+- Fix: Last Conversion not displaying properly in MU
+- Fix: CTA and form submission conversion filter not working for tracking data
+- Fix: User getting updated in GetResponse and Hubspot even when already subscribed users aren't allowed
+- Fix: Error with ConstantContact when updating user's lists when it's already subscribed
+- Fix: Browser visibility condition flagging MS Edge as Chrome
+
+= 4.3.1 ( 2020-09-14 ) =
+
+- New: Modules preview for mobile and desktop, and in a frontend page
+- New: Button for going to the documentation page
+- New: Reset button for the appearance Typography and Advanced settings
+- Enhance: Allow displaying the analytics widget without a title
+
+= 4.3.0 ( 2020-08-17 ) =
+
+- Add pre-built templates to choose from when creating a module
+- Add settings for changing the typography properties of the modules' elements
+- Add settings for adjusting the border, spacing, and shadow of the modules' elements
+- Add settings for adjusting the module layout
+- Add settings for handling the module appearance in mobiles
+- Fix Campaign Monitor not updating a subscribed user's details
+- Fix emails list export not working on Flywheel
+- Fix minor UI and UX issues
+
+= 4.2.1 ( 2020-06-21 ) =
+
+- Add a visbility condition for Cookies
+- Add a widget for the modules' analytics in the WordPress Dashboard
+- Add "time delay" option for the AdBlock trigger
+- Add tag in the modules listing pages when tracking is disabled for the module
+- Fix incompatibility with WordPress versions previous to 5.0
+- Fix deleted default form fields show up again on page load
+- Fix using a relative path for including the autoloader file
+- Fix custom classes added to form fields not displaying in frontend
+- Fix reCAPTCHA custom error message not being displayed
+- Fix reCAPTCHA light and dark theme not updating as selected
+- Fix mobile offset values affecting desktop display for Social Sharing modules
+- Fix error in console when sharing a page using Pinterest
+- Fix missing check for performing bulk actions
+- Fix missing title and subtitle elements in the global "Palettes" settings
+- Fix AdBlock trigger not working as expected
+- Fix CSS changes not displaying in the preview unless the module is saved
+- Fix minor UI and UX issues
+- Improve the query for retrieving the site's posts for visibility conditions
+- Improve compatibility with Branda's Text Replacement tool
+- Update handling of Aweber's response on subscription
+
+
+= 4.2.0 ( 2020-05-18 ) =
+
+- Add scheduling modules functionality
+- Add hooks for adding custom Social Sharing platforms
+- Add handlers for modules' views in front
+- Fix Pop-up not showing on single CPT pages
+- Fix select dropdown search boxes not working fine in some modals
+- Fix Font Awesome icons not showing up in modules
+- Fix select dropdown for Mailchimp interests is not visible
+- Fix 'Page' condition for blog and WC shop pages not displaying the module
+- Fix 'Above' and 'Below' options for feature image positioning not working
+- Fix Embedded modules not displayin on preview on certain screen sizes
+- Fix minor UX and UI issues
+- Fix PHP notices when connecting to Aweber
+- Fix error when toggling tracking in bulk
+- Fix issues with ActiveCampaign and custom fields
+- Fix videos not being properly resized under certain conditions
+- Fix error on form submission when using custom date formats in the date field
+- Fix iContact marking a subscription as not subscribed when it was actually subscribed
+- Improve accessibility for modals and toggles on admin side
+- Improve accessibility for icons
+- Improve performance on admin side
+- Improve making the colorpickers editable without opening the selector
+
+= 4.1.1 ( 2020-03-18 ) =
+
+- Add Oauth2 for Aweber
+- Add compatibility with Mailchimp GDPR options
+- Allow adding "mailto" and "tel" to the CTA links
+- Update Social Sharing widget from Hustle's dashboard to display the existing modules
+- Create module's IDs from their ID instead of their name
+- Improve accessibility for input fields labels in admin side
+- Improve updating the subscriber's tags when subscribing again in Mailchimp
+- Improve textdomain handling
+- Improve minor UI details
+- Improve compatibility with WP SVG Icons plugin, Oxygen builder, and Twenty Twenty theme
+- Fix GetResponse checking for a subscriber in all lists instead of the selected one
+- Fix certain IP format not being deleted from the IPs in the database
+- Fix time delay being ignored for "close" in "After external form submission behavior"
+- Fix Slide-in with stacked layout not displaying properly
+- Fix reCAPTCHA custom message not being shown
+- Fix module being closed even when "Close module after CTA conversion" is disabled
+- Fix navigation not showing in wizards nor settings page in mobiles
+
+
+709598-1604582414-ai
