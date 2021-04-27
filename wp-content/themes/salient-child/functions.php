@@ -105,4 +105,12 @@ function wpse_add_custom_meta_box_2() {
 }
 add_action('add_meta_boxes', 'wpse_add_custom_meta_box_2');
 
+// Adding meta box / Rich editor
+function material_description_meta_box() {
+    global $post;
+    wp_nonce_field( basename( __FILE__ ), 'wpse_our_nonce' );
+	$meta = get_post_meta($post->ID, 'material_description', true);
+    wp_editor( $meta, 'content-id', array( 'textarea_name' => 'material_description' ) );
+}
+
 ?>
