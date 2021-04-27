@@ -86,4 +86,23 @@ function woo_custom_product_tabs( $tabs ) {
     }
     return $tabs;
 }
+
+// Showing the content
+function woo_attrib_materials_tab_content() {
+	global $post;
+    echo'<p>'.get_post_meta($post->ID,'material_description')[0].'</p>';
+}
+
+function wpse_add_custom_meta_box_2() {
+   add_meta_box(
+       'material_description',
+       'Material description',
+       'material_description_meta_box',
+       'product',
+       'normal',
+       'high'
+   );
+}
+add_action('add_meta_boxes', 'wpse_add_custom_meta_box_2');
+
 ?>
