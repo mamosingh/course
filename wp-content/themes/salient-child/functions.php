@@ -113,4 +113,20 @@ function material_description_meta_box() {
     wp_editor( $meta, 'content-id', array( 'textarea_name' => 'material_description' ) );
 }
 
+// Save editor changes
+function save_wp_editor_fields(){
+    global $post;
+    update_post_meta($post->ID, 'material_description', $_POST['material_description']);
+}
+add_action( 'save_post', 'save_wp_editor_fields' );
+// Rename product data tabs
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
+function woo_rename_tabs( $tabs ) {
+    $tabs['additional_information']['title'] = __( 'Delivery information' );
+    return $tabs;
+}
+add_filter( 'woocommerce_product_additional_information_heading', 'misha_additional_info_heading' );
+function misha_additional_info_heading( $heading ){
+    return 'Delivery information';
+}
 ?>
