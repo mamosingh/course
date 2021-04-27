@@ -71,5 +71,19 @@ function df_disable_comments_admin_bar() {
 }
 add_action('init', 'df_disable_comments_admin_bar');
 
-
+// New Tab contents / Materials
+add_filter( 'woocommerce_product_tabs', 'woo_custom_product_tabs' );
+function woo_custom_product_tabs( $tabs ) {
+    //Attribute materials tab
+    global $post;
+    $materialfield = get_post_meta($post->ID, 'material_description', true);
+    if (!empty($materialfield)) {
+        $tabs['attrib_materials_tab'] = array(
+            'title'     => __( 'Materials', 'woocommerce' ),
+            'priority'  => 10,
+            'callback'  => 'woo_attrib_materials_tab_content'
+        );
+    }
+    return $tabs;
+}
 ?>
