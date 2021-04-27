@@ -90,7 +90,9 @@ function woo_custom_product_tabs( $tabs ) {
 // Showing the content
 function woo_attrib_materials_tab_content() {
 	global $post;
-    echo'<p>'.get_post_meta($post->ID,'material_description')[0].'</p>';
+    $content = apply_filters('the_content', get_post_meta($post->ID,'material_description', true));
+    echo'<div class="material-description-inner">'.$content.'</div>';
+
 }
 
 function wpse_add_custom_meta_box_2() {
@@ -119,6 +121,7 @@ function save_wp_editor_fields(){
     update_post_meta($post->ID, 'material_description', $_POST['material_description']);
 }
 add_action( 'save_post', 'save_wp_editor_fields' );
+
 // Rename product data tabs
 add_filter( 'woocommerce_product_tabs', 'woo_rename_tabs', 98 );
 function woo_rename_tabs( $tabs ) {
