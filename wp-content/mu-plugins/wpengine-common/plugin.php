@@ -1599,14 +1599,6 @@ class WpeCommon extends WpePlugin_common {
 				delete_transient('wpe_notices_ttl');
 				wp_cache_delete('wpe_notices_ttl','transient');
 				break;
-			case 'sso':
-				$key = $_POST['key'];
-				if( sha1('wpe-sso|'.WPE_APIKEY.'|'.PWP_NAME) == $key )	{
-					$token = sha1($key. mt_rand() . mt_rand() . mt_rand() . mt_rand() . mt_rand() . mt_rand() . mt_rand() . mt_rand() );
-					set_transient('wpe_sso',$token,60);
-					echo $token;
-				}
-				break;
 			case 'purge-all-caches':
 				ob_start();
 				WpeCommon::purge_memcached();

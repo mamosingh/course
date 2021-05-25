@@ -8,7 +8,67 @@ Template: salient
 Version: 1.0
 */
 
+.custom_filter {
+    display: flex;
+    margin: 20px 0;
+}
+
+.custom_filter select, .selectric {
+    width: 300px;
+    border: 1px solid #000 !important;
+    color: #000;
+    background-color: #fff !important;
+    box-shadow: none;
+    margin: 0 20px 20px 0;
+}
+.custom_filter select{
+    display: none;
+}
+.selectric .button, .selectric-items{
+    background-color: #fff !important;
+}
+/*.select_wrapper{*/
+/*    position: relative;*/
+/*    margin: 0 20px 20px 0;*/
+/*}*/
+/*.custom_filter .select_wrapper::after {*/
+/*    content: "❯";*/
+/*    transform: rotate(90deg);*/
+/*    font-size: 12px;*/
+/*    top: 10px;*/
+/*    right: 15px;*/
+/*    position: absolute;*/
+/*}*/
+
+.custom_filter button {
+    width: 300px;
+    height: 38px;
+    background-color: #000;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+}
+.woocommerce .woocommerce-result-count, .woocommerce-page .woocommerce-result-count{
+    right: 0;
+}
+
+.tax-product_cat .container-wrap{
+    z-index: 999;
+}
 
 
+@media all and (max-width: 1200px) {
+    .custom_filter select, .selectric {
+        width: 250px;
+    }
+}
 
-
+@media all and (max-width: 992px) {
+    .custom_filter{
+        flex-direction: column;
+    }
+    .custom_filter select, .selectric, .custom_filter button {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+}
